@@ -114,13 +114,15 @@ function App() {
 
   return (
     <>
-      <Buscador colaboradores={colaboradores} />
-      <Listado BaseColaboradores={colaboradores} />
-      <Formulario validarForm={validarForm} errorNombre={errorNombre} errorCorreo={errorCorreo}
-      errorEdad={errorEdad} errorCargo={errorCargo} errorTelefono={errorTelefono}/>
-      <div className='mt-0 p-1' style={{backgroundColor:'#373DD1',fontSize:'25px'}}>
-        <Alerta alerta={alerta}/>
-      </div>      
+      <div className='p-5' style={{backgroundColor:'#49c8be'}}>
+        <Buscador colaboradores={colaboradores} />
+        <Listado BaseColaboradores={colaboradores} />
+        <Formulario validarForm={validarForm} errorNombre={errorNombre} errorCorreo={errorCorreo}
+          errorEdad={errorEdad} errorCargo={errorCargo} errorTelefono={errorTelefono}/>
+        <div className='mt-0 p-1' style={{backgroundColor:'#373DD1',fontSize:'25px'}}>
+          <Alerta alerta={alerta}/>
+        </div>  
+      </div>    
     </>
   )
 }

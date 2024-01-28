@@ -24,23 +24,23 @@ const Formulario = ({validarForm,errorNombre,errorCorreo,errorEdad,errorCargo,er
         <h2 style={{color:'white'}}>Agregar colaborador</h2>
         <Form onSubmit={validarInput}>
             <Form.Group className="mb-2" style={{display:'flex',justifyContent:'center'}} controlId="formBasicEmail">
-                <Form.Control className={errorNombre ? 'error' : 'inputs'} placeholder={errorNombre ? 'Introduzca el nombre' : 'Juan Perez'}
+                <Form.Control className={errorNombre ? 'error' : 'inputs'} placeholder={errorNombre ? 'Introduzca el nombre' : 'Nombre del colaborador'}
                 type='text' name='nombre' onChange={(e) => setNombre(e.target.value)} value={nombre}/>
             </Form.Group>
             <Form.Group className="mb-2" style={{display:'flex',justifyContent:'center'}} controlId="formBasicEmail">
-                <Form.Control className={errorCorreo ? 'error' : 'inputs'}  placeholder={errorCorreo ? 'Introduzca el correo' : 'JuanPerez@hotmail.cl'}
+                <Form.Control className={errorCorreo ? 'error' : 'inputs'}  placeholder={errorCorreo ? 'Introduzca el correo' : 'Email del colaborador'}
                 type='email' name='email' onChange={(e) => setCorreo(e.target.value)} value={correo} />
             </Form.Group>
             <Form.Group className="mb-2" style={{display:'flex',justifyContent:'center'}} controlId="formBasicEmail">
-                <Form.Control className={errorEdad ? 'error' : 'inputs'} placeholder={errorEdad ? 'Introduzca su edad' : '29'}
+                <Form.Control className={errorEdad ? 'error' : 'inputs'} placeholder={errorEdad ? 'Introduzca su edad' : 'Edad del colaborador'}
                 type='text' name='edad' onChange={(e) => setEdad(e.target.value)} value={edad} /> 
             </Form.Group>
             <Form.Group className="mb-2" style={{display:'flex',justifyContent:'center'}} controlId="formBasicEmail">
-                <Form.Control className={errorCargo ? 'error' : 'inputs'} placeholder={errorCargo ? 'Introdusca el cargo' : 'traficante de pasta'}
+                <Form.Control className={errorCargo ? 'error' : 'inputs'} placeholder={errorCargo ? 'Introduzca el cargo' : 'Cargo del colaborador'}
                 type='text' name='cargo' onChange={(e) => setCargo(e.target.value)} value={cargo} /> 
             </Form.Group>
             <Form.Group className="mb-2" style={{display:'flex',justifyContent:'center'}} controlId="formBasicEmail">
-                <Form.Control className={errorTelefono ? 'error' : 'inputs'} placeholder={errorTelefono ? 'Introduzca el telefono' : '+56 966666666'}
+                <Form.Control className={errorTelefono ? 'error' : 'inputs'} placeholder={errorTelefono ? 'Introduzca el telefono' : 'Telefono del colaborador'}
                 type='tel' name='telefono' onChange={(e) => setTelefono(e.target.value)} value={telefono}/> 
             </Form.Group>
             <button type="submit" className="btn btn-success mt-1 pb-2 boton-reg" style={{width:'80%'}}>Agregar colaborador</button>
